@@ -14,7 +14,7 @@ interface Service {
 const services: Service[] = [
   {
     title: "Sistemas de ventas y POS a medida",
-    description: "Diseño sistemas de registro de ventas y POS simples, adaptados al flujo real de tu negocio (no al revés).",
+    description: "Diseñamos sistemas de registro de ventas y POS simples, adaptados al flujo real de tu negocio (no al revés).",
     bullets: [
       "Registro de ventas por día, turno, vendedor y tipo de producto.",
       "Gestión de promociones y combos.",
@@ -25,7 +25,7 @@ const services: Service[] = [
   },
   {
     title: "Sistemas de reservas y gestión de turnos",
-    description: "Dejo atrás el caos de cuadernos y mensajes sueltos con un sistema de reservas claro y visual.",
+    description: "Dejá atrás el caos de cuadernos y mensajes sueltos con un sistema de reservas claro y visual.",
     bullets: [
       "Agenda de reservas centralizada.",
       "Asignación de mesas, cambios y cancelaciones simples.",
@@ -36,7 +36,7 @@ const services: Service[] = [
   },
   {
     title: "Paneles de gastos y finanzas del negocio",
-    description: "Herramientas para que el dueño entienda sus números sin volverse loco con Excel.",
+    description: "Herramientas para que entiendas tus números sin volverte loco con Excel.",
     bullets: [
       "Registro de gastos y movimientos diarios.",
       "Resumen por categoría (proveedores, sueldos, insumos, etc.).",
@@ -47,7 +47,7 @@ const services: Service[] = [
   },
   {
     title: "Prototipado y automatización ligera",
-    description: "Si tenés una idea de sistema pero no sabés por dónde empezar, te ayudo a aterrizarla y hacer una primera versión funcional.",
+    description: "Si tenés una idea de sistema pero no sabés por dónde empezar, te ayudamos a aterrizarla y hacer una primera versión funcional.",
     bullets: [
       "Diseño del flujo del sistema (qué pantallas, qué datos, qué pasos).",
       "Prototipos web funcionales para probar con tu equipo.",

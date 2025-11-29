@@ -43,15 +43,14 @@ const About = () => {
             </p>
             
             <p className={styles.paragraph}>
-              Fundada por <strong>Francisco Llorens</strong>, desarrollador y gestor de negocios gastronómicos, 
-              Cuaderno Cero está creciendo como un equipo dedicado a diseñar sistemas que ordenan la operación diaria 
-              de restaurantes, pizzerías y pequeños comercios.
+              Fundada por <strong>Francisco Llorens</strong>, Cuaderno Cero está creciendo como un equipo 
+              dedicado a diseñar sistemas que ordenan la operación diaria de pequeños y medianos comercios.
             </p>
             
             <p className={styles.paragraph}>
               Nuestro enfoque es simple: <strong>sistemas claros, adaptados a cómo trabaja tu equipo</strong>, 
-              sin tecnicismos innecesarios y sin prometer automatizaciones imposibles. Preferimos algo que funcione 
-              todos los días antes que una solución "perfecta" que nadie usa.
+              sin tecnicismos innecesarios y sin prometer automatizaciones imposibles. Algo simple y concreto, 
+              más que la solución para todo.
             </p>
           </div>
         </motion.div>

@@ -43,8 +43,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Diseñamos herramientas digitales simples para ordenar ventas, reservas y gastos en tu negocio. 
-              Dejamos atrás el cuaderno y las planillas eternas, sin complicarle la vida a tu equipo.
+              Diseñamos herramientas digitales simples para ordenar ventas, reservas, gastos.         
+              Dejá atrás el cuaderno y las planillas eternas. Simplificá la gestión de tu negocio.
             </motion.p>
             
             <motion.div 
