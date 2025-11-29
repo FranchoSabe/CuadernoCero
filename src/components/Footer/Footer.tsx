@@ -15,7 +15,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.brand}>
-            <h3 className={styles.brandName}>Francho Jorens</h3>
+            <h3 className={styles.brandName}>Cuaderno Cero</h3>
             <p className={styles.brandTagline}>
               Sistemas a medida para pequeños y medianos negocios
             </p>
@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            © {currentYear} Francisco "Francho" Jorens. Todos los derechos reservados.
+            © {currentYear} Cuaderno Cero. Todos los derechos reservados.
           </p>
         </div>
       </div>

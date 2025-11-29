@@ -19,7 +19,7 @@ const Navbar = () => {
     { label: 'Inicio', href: '#inicio' },
     { label: 'Servicios', href: '#servicios' },
     { label: 'Proyectos', href: '#proyectos' },
-    { label: 'Sobre mí', href: '#sobre-mi' },
+    { label: 'Quiénes somos', href: '#quienes-somos' },
     { label: 'Habilidades', href: '#habilidades' },
     { label: 'Contacto', href: '#contacto' },
   ];
@@ -43,7 +43,7 @@ const Navbar = () => {
       <nav className={styles.nav}>
         <div className={styles.container}>
           <a href="#inicio" className={styles.logo} onClick={(e) => handleClick(e, '#inicio')}>
-            <span>Francho Jorens</span>
+            <span>Cuaderno Cero</span>
           </a>
 
           {/* Desktop Menu */}

@@ -238,6 +238,7 @@ vercel
 - **Email**: jorensjfrancisco@gmail.com
 - **WhatsApp**: +54 9 221 592-2264
 - **Ubicación**: La Plata, Argentina
+- **Fundador**: Francisco Llorens
 
 ---
 

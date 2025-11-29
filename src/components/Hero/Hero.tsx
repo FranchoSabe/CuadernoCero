@@ -25,7 +25,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Francisco "Francho" Jorens
+              Cuaderno Cero
             </motion.h1>
             
             <motion.h2 
@@ -43,8 +43,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Diseño herramientas digitales simples para ordenar ventas, reservas y gastos en tu negocio. 
-              Dejo atrás el cuaderno y las planillas eternas, sin complicarle la vida a tu equipo.
+              Diseñamos herramientas digitales simples para ordenar ventas, reservas y gastos en tu negocio. 
+              Dejamos atrás el cuaderno y las planillas eternas, sin complicarle la vida a tu equipo.
             </motion.p>
             
             <motion.div 

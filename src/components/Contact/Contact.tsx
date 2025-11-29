@@ -25,14 +25,14 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const mensaje = `Hola Francho, soy ${formData.nombre} de ${formData.negocio}. ${formData.mensaje}`;
+    const mensaje = `Hola! Soy ${formData.nombre} de ${formData.negocio}. Contacto desde Cuaderno Cero: ${formData.mensaje}`;
     const whatsappUrl = `https://wa.me/5492215922264?text=${encodeURIComponent(mensaje)}`;
     
     window.open(whatsappUrl, '_blank');
   };
 
   const handleWhatsAppClick = () => {
-    const mensaje = "Hola Francho, quiero mejorar la gestión de mi negocio y me gustaría hablar sobre un sistema a medida.";
+    const mensaje = "Hola! Quiero mejorar la gestión de mi negocio y me gustaría hablar sobre un sistema a medida con Cuaderno Cero.";
     const whatsappUrl = `https://wa.me/5492215922264?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
   };
