@@ -1,8 +1,8 @@
 # Cuaderno Cero
 
-Sistemas a medida para pequeños y medianos negocios. Dejá atrás el cuaderno y las planillas eternas.
+Sistemas a medida para emprendimientos y pequeños comercios. Dejá atrás el cuaderno y las planillas eternas.
 
-**Por Francisco "Francho" Jorens**
+**Por Francisco Llorens**
 
 ## 🚀 Stack Tecnológico
 

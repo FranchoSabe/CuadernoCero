@@ -17,7 +17,7 @@ const Footer = () => {
           <div className={styles.brand}>
             <h3 className={styles.brandName}>Cuaderno Cero</h3>
             <p className={styles.brandTagline}>
-              Sistemas a medida para pequeños y medianos negocios
+              Sistemas a medida para emprendimientos y pequeños comercios
             </p>
           </div>
 

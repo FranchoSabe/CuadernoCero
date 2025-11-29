@@ -44,7 +44,7 @@ const About = () => {
             
             <p className={styles.paragraph}>
               Fundada por <strong>Francisco Llorens</strong>, Cuaderno Cero está creciendo como un equipo 
-              dedicado a diseñar sistemas que ordenan la operación diaria de pequeños y medianos comercios.
+              dedicado a diseñar sistemas que ordenan la operación diaria de emprendimientos y pequeños comercios.
             </p>
             
             <p className={styles.paragraph}>

@@ -34,7 +34,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Sistemas a medida para pequeños y medianos negocios
+              Sistemas a medida para emprendimientos y pequeños comercios
             </motion.h2>
             
             <motion.p 
