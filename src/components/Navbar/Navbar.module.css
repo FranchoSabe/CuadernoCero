@@ -1,0 +1,144 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: var(--shadow-soft-md);
+}
+
+.nav {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--color-primary-light);
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menuItem {
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menuItem:hover {
+  color: var(--color-primary);
+}
+
+.menuItem::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.menuItem:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text-main);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.mobileMenuList {
+  padding: 1rem 1.5rem;
+}
+
+.mobileMenuItem {
+  display: block;
+  padding: 0.75rem 0;
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.mobileMenuItem:hover {
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileMenu {
+    display: none;
+  }
+}
