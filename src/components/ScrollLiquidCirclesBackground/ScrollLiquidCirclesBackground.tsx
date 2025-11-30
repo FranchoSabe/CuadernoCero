@@ -47,32 +47,6 @@ const lerp = (a: number, b: number, t: number): number => {
 };
 
 /**
- * Convierte color hex a RGB
- */
-const hexToRgb = (hex: string): { r: number; g: number; b: number } => {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
-  } : { r: 0, g: 0, b: 0 };
-};
-
-/**
- * Interpola entre dos colores hex
- */
-const lerpColor = (colorA: string, colorB: string, t: number): string => {
-  const a = hexToRgb(colorA);
-  const b = hexToRgb(colorB);
-  
-  const r = Math.round(lerp(a.r, b.r, t));
-  const g = Math.round(lerp(a.g, b.g, t));
-  const blue = Math.round(lerp(a.b, b.b, t));
-  
-  return `rgb(${r}, ${g}, ${blue})`;
-};
-
-/**
  * Componente de fondo con transición diagonal y círculos en la zona de transición
  * 
  * Características:
