@@ -1,3 +1,4 @@
+import ScrollLiquidCirclesBackground from './components/ScrollLiquidCirclesBackground/ScrollLiquidCirclesBackground';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services';
@@ -11,6 +12,7 @@ import styles from './App.module.css';
 function App() {
   return (
     <div className={styles.app}>
+      <ScrollLiquidCirclesBackground />
       <Navbar />
       <main>
         <Hero />

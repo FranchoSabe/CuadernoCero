@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding: 6rem 0 4rem;
-  background: linear-gradient(135deg, var(--color-page) 0%, var(--color-page) 50%, var(--color-primary-soft) 100%);
+  background: transparent; /* Sin fondo para ver el LiquidBackground */
   position: relative;
   overflow: hidden;
 }
@@ -33,7 +33,7 @@
 .title {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--color-text-main);
+  color: #0a1f15; /* Texto verde muy oscuro para contrastar con fondo verde claro */
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
@@ -41,7 +41,7 @@
 .subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: #0f3a24; /* Verde muy oscuro para destacar sobre fondo verde */
   line-height: 1.3;
   margin-bottom: 0.5rem;
 }
@@ -49,7 +49,7 @@
 .description {
   font-size: 1.125rem;
   line-height: 1.7;
-  color: var(--color-text-muted);
+  color: #0f3a24; /* Verde oscuro para legibilidad sobre fondo verde */
   max-width: 600px;
 }
 
@@ -71,25 +71,25 @@
 }
 
 .primaryButton {
-  background-color: var(--color-primary);
+  background-color: #0f3a24; /* Verde muy oscuro para destacar */
   color: white;
   box-shadow: var(--shadow-soft-md);
 }
 
 .primaryButton:hover {
-  background-color: #15803d;
+  background-color: #166534;
   transform: translateY(-2px);
   box-shadow: var(--shadow-soft-lg);
 }
 
 .secondaryButton {
   background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  color: #0f3a24;
+  border: 2px solid #0f3a24;
 }
 
 .secondaryButton:hover {
-  background-color: var(--color-primary-soft);
+  background-color: rgba(15, 58, 36, 0.1);
   transform: translateY(-2px);
 }
 
