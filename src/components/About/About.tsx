@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id="quienes-somos" className={styles.about} ref={ref}>
       <div className={styles.container}>
-        <motion.div 
+        <motion.div
           className={styles.header}
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -19,7 +19,7 @@ const About = () => {
           <h2 className={styles.title}>Quiénes somos</h2>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className={styles.content}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -33,24 +33,21 @@ const About = () => {
 
           <div className={styles.textContent}>
             <p className={styles.paragraph}>
-              <strong>Cuaderno Cero</strong> nació en La Plata, Argentina, de la necesidad real de ordenar un restaurante familiar.
+              En <strong>Cuaderno Cero</strong> transformamos el caos operativo en sistemas digitales simples y eficientes.
             </p>
-            
+
             <p className={styles.paragraph}>
-              Durante años convivimos con problemas muy concretos: reservas desordenadas, ventas anotadas a mano, 
-              gastos que se pierden en planillas y decisiones tomadas "a ojo". Así surgió la idea de crear 
-              herramientas digitales simples que realmente funcionen para negocios como el tuyo.
+              Nacimos de la experiencia real gestionando comercios. Sabemos que las "soluciones enlatadas" muchas veces complican más de lo que resuelven.
+              Por eso, no vendemos software genérico: <strong>diseñamos la herramienta exacta que tu negocio necesita</strong> para ordenar ventas, reservas y gastos.
             </p>
-            
+
             <p className={styles.paragraph}>
-              Fundada por <strong>Francisco Llorens</strong>, Cuaderno Cero está creciendo como un equipo 
-              dedicado a diseñar sistemas que ordenan la operación diaria de emprendimientos y pequeños comercios.
+              Nos especializamos en emprendimientos y PyMEs que quieren dejar el papel y las planillas eternas, pero sin perder tiempo aprendiendo sistemas complejos.
             </p>
-            
+
             <p className={styles.paragraph}>
-              Nuestro enfoque es simple: <strong>sistemas claros, adaptados a cómo trabaja tu equipo</strong>, 
-              sin tecnicismos innecesarios y sin prometer automatizaciones imposibles. Algo simple y concreto, 
-              más que la solución para todo.
+              <strong>Nuestro compromiso:</strong> Tecnologías modernas, interfaces limpias y un trato humano.
+              Hablamos tu idioma, no en código, para que te enfoques en lo que mejor sabes hacer: hacer crecer tu negocio.
             </p>
           </div>
         </motion.div>

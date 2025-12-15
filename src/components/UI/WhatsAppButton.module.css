@@ -1,0 +1,67 @@
+.button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    /* WhatsApp default or var(--color-primary) */
+    color: white;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    stroke-width: 2.5;
+}
+
+.tooltip {
+    position: absolute;
+    right: 70px;
+    background-color: var(--color-surface);
+    color: var(--color-text-main);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-text-main);
+    box-shadow: var(--shadow-hard-sm);
+    font-weight: 600;
+    font-size: 0.875rem;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.button:hover .tooltip {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .button {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon {
+        width: 26px;
+        height: 26px;
+    }
+}

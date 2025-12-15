@@ -1,11 +1,12 @@
 .footer {
-  background-color: #0f172a;
-  color: #e2e8f0;
-  padding: 3rem 0 1.5rem;
+  background-color: var(--color-text-main);
+  color: var(--color-surface);
+  padding: 4rem 0 2rem;
+  border-top: var(--border-thick);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -106,7 +107,7 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .brandTagline {
     max-width: 100%;
   }
@@ -116,9 +117,8 @@
   .content {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .brand {
     grid-column: 1 / -1;
   }
 }
-

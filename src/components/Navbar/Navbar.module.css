@@ -3,15 +3,14 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--color-surface);
+  border-bottom: var(--border-thick);
   z-index: 1000;
   transition: all 0.3s ease;
 }
 
 .header.scrolled {
-  box-shadow: var(--shadow-soft-md);
+  box-shadow: var(--shadow-hard-md);
 }
 
 .nav {
@@ -19,7 +18,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
@@ -28,14 +27,16 @@
 }
 
 .logo {
-  font-size: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-text-main);
   transition: color 0.3s ease;
+  letter-spacing: -0.02em;
 }
 
 .logo:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .menu {
@@ -131,7 +132,7 @@
   .menu {
     display: none;
   }
-  
+
   .hamburger {
     display: flex;
   }

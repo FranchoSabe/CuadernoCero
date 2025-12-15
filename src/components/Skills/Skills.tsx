@@ -2,12 +2,11 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './Skills.module.css';
-import { 
-  PaletteIcon, 
-  DatabaseIcon, 
-  CodeIcon, 
+import {
+  PaletteIcon,
+  DatabaseIcon,
+  CodeIcon,
   LinkIcon,
-  RestaurantIcon,
   ClipboardIcon,
   UsersIcon,
   TrendingUpIcon
@@ -18,18 +17,18 @@ interface Skill {
   Icon: React.ComponentType<{ className?: string }>;
 }
 
-const technicalSkills: Skill[] = [
-  { name: "Diseño de sistemas web", Icon: PaletteIcon },
-  { name: "Bases de datos y modelos de información", Icon: DatabaseIcon },
-  { name: "Desarrollo de aplicaciones web (React, etc.)", Icon: CodeIcon },
-  { name: "Integración con herramientas existentes (planillas, formularios, etc.)", Icon: LinkIcon }
+const techStack: Skill[] = [
+  { name: "React & Next.js para interfaces veloces", Icon: CodeIcon },
+  { name: "Bases de Datos Seguras (SQL/NoSQL)", Icon: DatabaseIcon },
+  { name: "Integraciones API (MercadoPago, WhatsApp)", Icon: LinkIcon },
+  { name: "Diseño UI/UX Profesional", Icon: PaletteIcon }
 ];
 
-const businessSkills: Skill[] = [
-  { name: "Gestión de restaurante y operación diaria", Icon: RestaurantIcon },
-  { name: "Organización de procesos (reservas, ventas, caja)", Icon: ClipboardIcon },
-  { name: "Trabajo con equipos no técnicos", Icon: UsersIcon },
-  { name: "Lectura y análisis de números del negocio", Icon: TrendingUpIcon }
+const ourApproach: Skill[] = [
+  { name: "Entendemos tu Negocio (No solo código)", Icon: TrendingUpIcon },
+  { name: "Soporte Humano y Directo", Icon: UsersIcon },
+  { name: "Soluciones Escalables", Icon: TrendingUpIcon },
+  { name: "Procesos Claros y Simples", Icon: ClipboardIcon }
 ];
 
 const Skills = () => {
@@ -48,8 +47,8 @@ const Skills = () => {
 
   const chipVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
       transition: {
         duration: 0.4
@@ -60,31 +59,31 @@ const Skills = () => {
   return (
     <section id="habilidades" className={styles.skills} ref={ref}>
       <div className={styles.container}>
-        <motion.div 
+        <motion.div
           className={styles.header}
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className={styles.title}>Habilidades</h2>
+          <h2 className={styles.title}>Tecnología y Enfoque</h2>
         </motion.div>
 
         <div className={styles.skillsGrid}>
-          {/* Habilidades Técnicas */}
-          <motion.div 
+          {/* Stack Tecnológico */}
+          <motion.div
             className={styles.skillCategory}
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className={styles.categoryTitle}>Habilidades Técnicas</h3>
-            <motion.div 
+            <h3 className={styles.categoryTitle}>Stack Tecnológico</h3>
+            <motion.div
               className={styles.chipsContainer}
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
             >
-              {technicalSkills.map((skill, index) => {
+              {techStack.map((skill, index) => {
                 const Icon = skill.Icon;
                 return (
                   <motion.div
@@ -102,21 +101,21 @@ const Skills = () => {
             </motion.div>
           </motion.div>
 
-          {/* Habilidades de Negocio */}
-          <motion.div 
+          {/* Por qué elegirnos */}
+          <motion.div
             className={styles.skillCategory}
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className={styles.categoryTitle}>Habilidades de Negocio</h3>
-            <motion.div 
+            <h3 className={styles.categoryTitle}>Por qué elegirnos</h3>
+            <motion.div
               className={styles.chipsContainer}
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
             >
-              {businessSkills.map((skill, index) => {
+              {ourApproach.map((skill, index) => {
                 const Icon = skill.Icon;
                 return (
                   <motion.div

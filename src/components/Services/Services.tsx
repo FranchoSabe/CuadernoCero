@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './Services.module.css';
 import { ShoppingCartIcon, CalendarIcon, ChartIcon, SparklesIcon } from './ServiceIcons';
+import { Card } from '../UI/Card';
 
 interface Service {
   title: string;
@@ -73,8 +74,8 @@ const Services = () => {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.6
@@ -85,7 +86,7 @@ const Services = () => {
   return (
     <section id="servicios" className={styles.services} ref={ref}>
       <div className={styles.container}>
-        <motion.div 
+        <motion.div
           className={styles.header}
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -97,7 +98,7 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className={styles.grid}
           variants={containerVariants}
           initial="hidden"
@@ -108,27 +109,24 @@ const Services = () => {
             return (
               <motion.div
                 key={index}
-                className={styles.card}
                 variants={cardVariants}
-                whileHover={{ 
-                  y: -8, 
-                  boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.15)"
-                }}
-                transition={{ duration: 0.3 }}
+                className={styles.cardWrapper} // Wrapper for animation only
               >
-                <div className={styles.iconWrapper}>
-                  <Icon className={styles.icon} />
-                </div>
-                <h3 className={styles.cardTitle}>{service.title}</h3>
-                <p className={styles.cardDescription}>{service.description}</p>
-                <ul className={styles.bulletList}>
-                  {service.bullets.map((bullet, i) => (
-                    <li key={i} className={styles.bullet}>
-                      <span className={styles.bulletIcon}>✓</span>
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
+                <Card hoverable className={styles.card}>
+                  <div className={styles.iconWrapper}>
+                    <Icon className={styles.icon} />
+                  </div>
+                  <h3 className={styles.cardTitle}>{service.title}</h3>
+                  <p className={styles.cardDescription}>{service.description}</p>
+                  <ul className={styles.bulletList}>
+                    {service.bullets.map((bullet, i) => (
+                      <li key={i} className={styles.bullet}>
+                        <span className={styles.bulletIcon}>✓</span>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
               </motion.div>
             );
           })}

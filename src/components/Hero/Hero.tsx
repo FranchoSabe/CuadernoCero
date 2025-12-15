@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
+import { Button } from '../UI/Button';
 
 const Hero = () => {
   const handleScrollTo = (id: string) => {
@@ -12,14 +13,14 @@ const Hero = () => {
   return (
     <section id="inicio" className={styles.hero}>
       <div className={styles.container}>
-        <motion.div 
+        <motion.div
           className={styles.content}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className={styles.textContent}>
-            <motion.h1 
+            <motion.h1
               className={styles.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -27,8 +28,8 @@ const Hero = () => {
             >
               Cuaderno Cero
             </motion.h1>
-            
-            <motion.h2 
+
+            <motion.h2
               className={styles.subtitle}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -36,39 +37,39 @@ const Hero = () => {
             >
               Sistemas a medida para emprendimientos y pequeños comercios
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               className={styles.description}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Diseñamos herramientas digitales simples para ordenar ventas, reservas, gastos.         
+              Diseñamos herramientas digitales simples para ordenar ventas, reservas, gastos.
               Dejá atrás el cuaderno y las planillas eternas. Simplificá la gestión de tu negocio.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               className={styles.buttons}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <button 
-                className={styles.primaryButton}
+              <Button
+                variant="primary"
                 onClick={() => handleScrollTo('#contacto')}
               >
-                Agendar una llamada
-              </button>
-              <button 
-                className={styles.secondaryButton}
+                Diagnóstico Gratuito
+              </Button>
+              <Button
+                variant="outline"
                 onClick={() => handleScrollTo('#proyectos')}
               >
                 Ver proyectos
-              </button>
+              </Button>
             </motion.div>
           </div>
 
-          <motion.div 
+          <motion.div
             className={styles.visualContent}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

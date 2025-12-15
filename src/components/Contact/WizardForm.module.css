@@ -1,0 +1,244 @@
+.wizardContainer {
+    background-color: var(--color-surface);
+    border: var(--border-thick);
+    box-shadow: var(--shadow-hard-md);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: var(--color-border-subtle);
+}
+
+.progressFill {
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.stepIndicator {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.question {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--color-text-main);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.stepContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.optionButton {
+    background: white;
+    border: 1px solid var(--color-border-subtle);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+    font-size: 1rem;
+}
+
+.optionButton:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-soft);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hard-sm);
+}
+
+.optionButton.selected {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-soft);
+    box-shadow: var(--shadow-hard-sm);
+}
+
+.optionIcon {
+    font-size: 1.5rem;
+}
+
+.listOption {
+    padding: 1rem 1.25rem;
+}
+
+.finalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputGroup label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text-main);
+}
+
+.input {
+    padding: 0.75rem;
+    border: 1px solid var(--color-text-muted);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-soft);
+}
+
+.submitButton {
+    margin-top: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    /* Neobrutalist shadow */
+}
+
+.submitButton:hover {
+    background-color: var(--color-primary-light);
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.submitButton:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.backButton {
+    margin-top: 2rem;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0;
+    align-self: flex-start;
+}
+
+.backButton:hover {
+    color: var(--color-text-main);
+    text-decoration: underline;
+}
+
+/* Success State */
+.successContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+    justify-content: center;
+}
+
+.successIcon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.successTitle {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.successText {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.frontendFallback {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+    width: 100%;
+}
+
+.fallbackLabel {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.fallbackButton {
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+
+.fallbackButton:hover {
+    background-color: var(--color-primary-soft);
+}
+
+@media (max-width: 480px) {
+    .optionsGrid {
+        grid-template-columns: 1fr;
+    }
+}

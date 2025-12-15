@@ -34,12 +34,8 @@
 
 /* Featured Card - Proyecto Principal */
 .featuredCard {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-2xl);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-soft-md);
-  transition: all 0.3s ease;
+  /* Styles handled by Card component */
+  height: 100%;
 }
 
 .badges {
@@ -144,12 +140,8 @@
 
 /* Secondary Cards - Próximamente */
 .card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 2rem;
-  box-shadow: var(--shadow-soft);
-  transition: all 0.3s ease;
+  /* Styles handled by Card component */
+  height: 100%;
 }
 
 .projectTitleSmall {
@@ -171,7 +163,7 @@
   .projectsGrid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .featuredCard {
     grid-column: 1 / -1;
   }
@@ -182,26 +174,25 @@
   .projects {
     padding: 4rem 0;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .subtitle {
     font-size: 1rem;
   }
-  
+
   .featuredCard,
   .card {
     padding: 1.5rem;
   }
-  
+
   .projectTitle {
     font-size: 1.5rem;
   }
-  
+
   .projectTitleSmall {
     font-size: 1.25rem;
   }
 }
-
